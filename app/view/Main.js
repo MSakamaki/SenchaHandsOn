@@ -1,18 +1,13 @@
 Ext.define('myapp.view.Main', {
-    //extend: 'Ext.tab.Panel',
-    extend: 'Ext.Panel',
+    extend: 'Ext.Container',
     xtype: 'main',
     requires: [
-        'Ext.TitleBar',
-        'Ext.Video'
+        'myapp.view.List'
     ],
     config: {
+        layout: 'card',
         items: [{
-            xtype: 'button',
-            text: 'SampleButton1'
-        },{
-            xtype: 'button',
-            text: 'SampleButton2'
+            xtype: 'memo-list'
         }]
     }
 });
