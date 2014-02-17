@@ -1,10 +1,10 @@
-Ext.difine('myapp.store.Notes',{
+Ext.define('myapp.store.Notes',{
 	extend: 'Ext.data.Store',
 	requires: [
-		'Memo.model.Note'
+		'myapp.model.Note'
 	],
 	config:{
-		model: 'myapp.mode.Note',
+		model: 'myapp.model.Note',
 		data: [
 			{text: 'sample1', update: '2013/02/17 21:00'},
 			{text: 'sample2', update: '2013/02/19 21:10'},
